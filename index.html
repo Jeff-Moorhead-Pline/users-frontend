@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Jeff">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeff's Webpage</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" async></script>
+</head>
+<body>
+    <h1 id="user-title">Users</h1>
+    <div id="users-list-container">
+        <table id="users-info">
+            <tr>
+                <th>ID</th>
+                <th>User Since</th>
+                <th>User Type</th>
+            </tr>
+
+        </table>
+    </div>
+    <div id="new-user-form-container">
+        <h1>Add a New User</h1>
+        <form name="create-user" id="create-user-form">
+            <label>Username: </label>
+            <input type="text" name="id" id="username-input">
+            <label>User Type: </label>
+            <select name="type" >
+                <option value="admin">Admin</option>
+                <option value="client" selected="selected">Client</option>
+                <option value="associate">Associate</option>
+                <option value="read-only">Read Only</option>
+            </select>
+            <input type="submit" value="Create">
+        </form>
+    </div>
+</body>
+</html>
